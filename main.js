@@ -1,13 +1,22 @@
 const { app, BrowserWindow } = require('electron');
+const PythonShell = require('python-shell');
+
+
+PythonShell.run('hello.py', (err, results) => {
+    if (err) throw err;
+    console.log('hello.py was executed');
+    console.log('results: ', results);
+});
 
 function createWindow() {
     window = new BrowserWindow({ width: 800, height: 600 });
     window.loadFile('index.html');
 
-    const python = require('child_process').spawn('python', ['./hello.py']);
-    python.stdout.on('data', data => {
-        console.log('data: ', data.toString('utf8'));
-    });
+    // First attempt to run Python code.
+    // const python = require('child_process').spawn('python', ['./hello.py']);
+    // python.stdout.on('data', data => {
+    //     console.log('data: ', data.toString('utf8'));
+    // });
 }
 
 app.on('ready', createWindow);

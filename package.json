@@ -20,5 +20,8 @@
   "homepage": "https://github.com/marinko-peso/python-electron#readme",
   "devDependencies": {
     "electron": "^2.0.8"
+  },
+  "dependencies": {
+    "python-shell": "^0.5.0"
   }
 }
