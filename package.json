@@ -1,0 +1,24 @@
+{
+  "name": "python-electron",
+  "version": "1.0.0",
+  "description": ":snake: Simple Electron test with Python",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marinko-peso/python-electron.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marinko-peso/python-electron/issues"
+  },
+  "homepage": "https://github.com/marinko-peso/python-electron#readme",
+  "devDependencies": {
+    "electron": "^2.0.8"
+  }
+}
